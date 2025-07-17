@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MockPages</title>
+    <style>
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 20px;
+        }
+        #Productcard{
+            border:10px solid black;
+                width: 20vw;
+                margin: 19px;
+                background: linear-gradient(to bottom, rgb(53, 0, 121) 0% ,purple 66%,violet 99%);
+        }
+        h1{
+            color:white;
+        }
+        p{
+            color: rgba(0, 0, 0, 0.852);
+        }
+        body{
+            background: linear-gradient(274deg, rgb(136, 255, 0) 0%, rgb(0, 19, 80) 66%, rgb(68, 0, 77) 90%);
+        }
+        #footerID{
+            background-color: #1e2439de;
+            height:11vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            position: relative;
+            bottom: -7px;
+        }
+        #headerID{
+            height: 5vh;
+            background: linear-gradient(357deg, blue, violet, seagreen);
+            position: relative;
+            top: 45px;
+        }
+        #navID{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+        table{
+            border: 10px solid black;
+            border-collapse: collapse;
+        }
+        table td{
+            border: 2px solid black;
+        }
+        table th{
+            border: 2px solid black;
+            font-size: 20px;
+        }
+        table tr:nth-child(even){
+            background:linear-gradient( to right ,blue,seagreen);
+            color: white;
+        }
+        table tr:nth-child(odd){
+            background:linear-gradient( to right ,rgb(187, 0, 255),rgb(255, 0, 106));
+            color: white;
+        }
+        #dash-container{
+            display: flex;
+            justify-content: space-evenly;
+            height: 36vw;
+            align-items: center;
+        }
+        #element{
+            width: 8vw;
+            background: linear-gradient(45deg, #00ff00, #196b03);
+            padding: 10px;
+            text-align: center;
+        }
+        h2{
+            position: absolute;
+            left: 54vh;
+            background: radial-gradient(violet, blue);
+            width: 45vw;
+            text-align: center;
+            top: 34vh;
+        }
+        a:active{
+            color: orange;
+        }
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: orangered;
+        }
+        a:hover{
+            color:yellow;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    
+<header id="headerID">
+    <nav id="navID">
+        <a href="http://localhost:8000/Dashboard" target="_self">Dashboard</a>
+        <a href="http://localhost:8000/Students" target="_self">Student-Page</a>
+        <a href="http://localhost:8000/Products" target="_self">Product-Page</a>
+        <a href="http://localhost:8000/Users" target="_self">User-Page</a>
+    </nav>
+</header>

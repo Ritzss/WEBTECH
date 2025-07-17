@@ -1,0 +1,29 @@
+*{
+    /* margin: 0;
+    border: 0; */
+    box-sizing: border-box;
+}
+body{
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    width: fit-content;
+    background-color: black;
+    color: white;
+}
+
+p{
+    width:fit-content;
+    background:linear-gradient(to right,red,green,yellow);
+    color: springgreen;
+ 
+}
+
+img{
+    width:200px;
+    height:200px;
+}

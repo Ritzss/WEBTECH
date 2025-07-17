@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#containerone{
+    /* border: solid red; */
+
+}
+div{
+    /* border:solid green; */
+    display: inline-block;
+    text-align: center;
+    width: 303px;
+    height: 32px;
+    padding:5px;
+    background-color: seagreen;
+    color: yellow;
+}
+div:hover{
+    height: 74px;
+    text-align: center;
+    background-color: lawngreen;
+    color: brown;
+    padding: 15px;
+}
+#myelement{
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 1px purple;
+    text-align: center;
+    border: solid green;
+    height: 200px;
+    width: 200px;
+    margin:100px auto;
+    padding-top: 50px;
+}
+main{
+    text-align: center;
+    
+    height: 200px;
+    width: 200px;
+    margin:100px auto;
+    padding-top: 50px;
+}
+#box1{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:2px 2px 2px 1px red;
+}
+#box2{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:2px 2px 2px 1px rgb(135, 0, 172) inset;
+}
+#box3{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:2px 2px 2px 1px red;
+}
+#box4{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:0 0 5px 20px red;
+}
+#box5{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:2px 2px 2px 1px red;
+}
+
+#box6{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:2px 2px 2px 1px red;box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+#box7{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:2px 2px 2px 1px rgb(135, 0, 172) inset;
+}
+#box8{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:2px 2px 2px 1px red;
+}
+#box9{
+    margin: 0px 10px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow:0 0 5px 20px red;
+}
+#box10{
+    margin: 0px 20px;
+    display: inline-block;
+    border: solid green;
+    border-radius: 25%;
+    box-shadow: inset 59px 40px 14px 0px;
+}

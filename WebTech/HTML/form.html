@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<!-- 
+?tags::
+form -- It is used to create a form.
+     ?Attributes::
+     action       -- It is used to specify the URL where the form data will be sent.
+     method       -- It is used to specify the HTTP method to be used when sending the form data. Like GET, POST, PUT, DELETE etc.
+     novalidate   -- It is used to prevent the browzer from validating the form data.
+     autocomplete -- It is used to specify whether the browser should automatically fill in form fields based on previously entered data.
+label -- It is used to create a label for a form element.
+     ?Attributes::
+     for -- It is used to specify the id of the form element that the label is associated with.
+input -- It is used to create an input field in a form.
+     ?Attributes::
+     type  -- It is used to specify the type of input field. Like text, password, checkbox, radio etc
+         ?type's Attributes::
+           text             -- It is used to create a single-line text input field.
+           email            -- It is used to create an email input field.
+           number           -- It is used to create a number input field.
+           tel              -- It is used to create a telephone number input field.
+           password         -- It is used to create a password input field.
+           radio            -- It is used to create a radio button input field.
+           checkbox         -- It is used to create a checkbox input field.
+           submit           -- It is used to create a submit button.
+           reset            -- It is used to create a reset button.
+           button           -- It is used to create a button.
+           date             -- It is used to create a date input field.
+           time             -- It is used to create a time input field.
+           datetime-local   -- It is used to create a date and time input field.
+           week             -- It is used to create a week input field.
+           month            -- It is used to create a month input field.
+           image            -- It is used to create an image input field.
+           upload           -- It is used to create a file upload input field.
+           search           -- It is used to create a search input field. 
+           color            -- It is used to create a color input field.
+           range            -- It is used to create a range input field.
+     name  -- It is used to specify the name of the input field.
+     value -- It is used to specify the default value of the input field.
+     id    -- It is used to specify the id of the input field.
+     list  -- It is used to specify the id of the list of options for the input field.
+     height-- It is used to specify the height of the input field.
+     width -- It is used to specify the width of the input field.
+     min   -- It is used to specify the minimum value of the input field.
+     max   -- It is used to specify the maximum value of the input field.
+     minlenght   -- It is used to specify the minimum length of the input field.
+     malenght    -- It is used to specify the maximum length of the input field.
+     placeholder -- It is used to specify a hint that is displayed in the input field when it is empty.
+     required    -- It is used to specify that the input field is required.
+     readonly    -- It is used to specify that the input field is read-only.
+     disabled    -- It is used to specify that the input field is disabled.
+     size        -- It is used to specify the size of the input field.
+     autofocus   -- It is used to specify that the input field should be focused automatically when the page loads.
+     autocomplete-- It is used to specify whether the browser should automatically fill in the input field based on previously entered data
+button -- It is used to create a button in a form.
+     ?Atrributes::
+     type  -- It is used to specify the type of button. Like submit, reset, button etc.
+     name  -- It is used to specify the name of the button.
+     id    -- It is used to specify the id of the button.
+optgroup-- It is used to group related options in a select element.
+option  -- It is used to create an option in a select element.
+Select  -- It is used to create a dropdown list in a form.
+     ?Attributes::
+     multiple -- It is used to specify that the user can select multiple options from the list.
+datalist-- It is used to create a list of options for an input field.
+     ?Attributes::
+     id-- It is used to specify the id of the datalist.
+fieldset-- It is used to group related form elements together.
+textarea-- It is used to create a multi-line text input field. 
+legend  -- It is used to create a caption for a fieldset element.
+ -->
+<body>
+    <form method="get" novalidate autocomplete="off" >
+      <fieldset>
+         <legend>PERSONAL details</legend>
+        <label for="UserN">Name::</label>
+           <input type="text" name="userName" id="UserN" value="RITZS"> <br> <br>
+        <label for="UserE">Email::</label>
+           <input type="email" name="userEmail" id="UserE"required ><br> <br>
+        <label for="UserP">Phone No.::</label>
+           <input type="tel" name="userNumber" id="UserP"><br> <br>
+        <label for="UserPWD">Password::</label>
+           <input type="password" name="userpwd" id="UserPWD"><br> <br>
+        <label for="gender">Gender::</label>
+           <input type="radio" name="gender" value="male" id="gender"> male
+           <input type="radio" name="gender" value="female" id="gender"> female
+           <input type="radio" name="gender" value="others" id="gender"> others<br> <br>
+       </fieldset>
+       <fieldset>  
+         <legend>Educations</legend>  
+        <label for="skill">Skills::</label>
+           <input type="checkbox" name="skills" value="html" id="skill" list="">HTML
+           <input type="checkbox" name="skills" value="CSS" id="skill">CSS
+           <input type="checkbox" name="skills" value="JS" id="skill">JavaScript
+           <input type="checkbox" name="skills" value="react" id="skill">React Js  <br>  <br>
+        <label for="1234">Skill::</label>
+        <select name="myskills" id="1234">
+            <optgroup label="FrontEnd"></optgroup>
+                   <option value="html">html</option>
+                   <option value="css">css</option>
+                   <option value="javascript">JavaScript</option>
+                   <option value="typescript">typescript</option>
+                   <option value="react">react</option>
+            <optgroup label="Middleware"></optgroup>
+                   <option value="Express">Express</option>
+                   <option value="Node">node</option>
+                   <option value="Express">express</option>
+            <optgroup label="BackEnd"></optgroup>
+                   <option value="SQL">sql</option>
+                   <option value="MySql">mysql</option>
+                   <option value="MongoDB">mongodb</option> 
+        </select><br> <br>
+
+        <label for="34">Skill::</label>
+        <select name="myskills" id="34" multiple>
+            <optgroup label="FrontEnd"></optgroup>
+                   <option value="html">html</option>
+                   <option value="css">css</option>
+                   <option value="javascript">JavaScript</option>
+                   <option value="typescript">typescript</option>
+                   <option value="react">react</option>
+            <optgroup label="Middleware"></optgroup>
+                   <option value="Express">Express</option>
+                   <option value="Node">node</option>
+                   <option value="Express">express</option>
+            <optgroup label="BackEnd"></optgroup>
+                   <option value="SQL">sql</option>
+                   <option value="MySql">mysql</option>
+                   <option value="MongoDB">mongodb</option>
+        </select> <br> <br>
+
+        <label for="rits">Skill::</label>
+        <select name="myskills" id="rits">
+                   <option value="html">html</option>
+                   <option value="css">css</option>
+                   <option value="javascript">JavaScript</option>
+                   <option value="typescript">typescript</option>
+                   <option value="react">react</option>
+                   <option value="Express">Express</option>
+                   <option value="Node">node</option>
+                   <option value="Express">express</option>
+                   <option value="SQL">sql</option>
+                   <option value="MySql">mysql</option>
+                   <option value="MongoDB">mongodb</option> 
+        </select><br> <br>
+        <label for="skills">Skills:</label>
+        <input id="skills" name="skill2" list="myskillsset">
+        <datalist id="myskillsset">
+                   <option >html</option>
+                   <option >css</option>
+                   <option >JavaScript</option>
+                   <option >typescript</option>
+                   <option >react</option>
+                   <option >Express</option>
+                   <option >node</option>
+                   <option >express</option>
+                   <option >sql</option>
+                   <option >mysql</option>
+                   <option >mongodb</option>
+        </datalist> <br> <br>
+
+        <label for="skills">Skills:</label>
+        <input id="skills" list="myskillsset" multiple>
+        <datalist id="myskillsset" >
+                   <option >html</option>
+                   <option >css</option>
+                   <option >JavaScript</option>
+                   <option >typescript</option>
+                   <option >react</option>
+                   <option >Express</option>
+                   <option >node</option>
+                   <option >express</option>
+                   <option >sql</option>
+                   <option >mysql</option>
+                   <option >mongodb</option>
+        </datalist> <br> <br>
+        <label for="testarea">Notes:</label>
+        <textarea name="Notes" id="testarea" rows="10" cols="50"></textarea>
+        <fieldset>
+         <legend>Types</legend>
+         date : <input placeholder="date" type="date"><br> <br>
+         time : <input type="time" placeholder="time"><br> <br>
+         dt-local : <input type="datetime-local" placeholder="dtlocal"><br> <br>
+         week : <input type="week" placeholder="week"> <br> <br>
+         month : <input type="month" placeholder="month"><br> <br>
+         image : <input type="image" placeholder="image" alt="image not found"><br> <br>
+         upload_file : <input type="file"><br> <br>
+         search : <input type="search"> <br> <br>
+         color : <input type="color"> <br> <br>
+         rating : <input type="range"> 
+        </fieldset>
+      </fieldset>
+      <fieldset>
+         <legend>Attribute of input</legend>
+         <input type="text" placeholder="enter your name"><br> <br>
+         <input type="text" placeholder="text" value="Ritanshu is a good guy" readonly><br> <br>
+         <input type="email" placeholder="email" required><br> <br>
+         <input type="email" placeholder="email" autocomplete="off"><br> <br>
+         <input type="number" placeholder="1" min="5" max="25" ><br> <br>
+         <input type="text" placeholder="name" minlength="8" maxlength="10"><br> <br>
+         <input type="text" placeholder="ritzs" disabled><br><br>
+         <input type="text" placeholder="address" size="5"><br><br>
+         <input type="email" placeholder="email" autofocus><br><br>
+      </fieldset>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+<hr>
+<hr>
+<hr>
+    <form action="">
+      <fieldset>
+         <legend>Pattern Testing</legend>
+      <input type="text" name="empName" placeholder="Name..." pattern="[A-Ma-m]{12}"><br><br>
+      <input type="tel" name="empNumber" placeholder="Number..." pattern="[0-9]{10}"><br><br>
+      <input type="tel" name="empNumber" placeholder="Number..." pattern="[7-9]{1}[0-9]{9}"><br><br>
+      <button type="submit">submit</button>
+      </fieldset>
+    </form>
+</body>
+</html>

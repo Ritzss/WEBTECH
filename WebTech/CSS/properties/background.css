@@ -1,0 +1,128 @@
+ /* body{
+    background: url("./lake-blue-moonlight-moon-wallpaper-preview.jpg") ;
+    background-repeat:  repeat ;
+    background-position:   ;
+    
+    background-size: cover;
+    color:white;
+}  */
+div{
+    display: inline-block;
+    text-align:right;
+    background:;
+    color:orangered;
+    background-repeat: ;
+}
+#b1{
+    height: 100px;
+    width: 100px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 50%;
+}
+#b2{
+    height: 100px;
+    width: 100px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 30%;
+}
+#b3{
+    height: 70px;
+    width: 200px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#b4{
+    height: 200px;
+    width: 100px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-end-start-radius: 60px;
+    border-end-end-radius: 60px;
+    border-start-end-radius: 60px;
+    border-start-start-radius: 60px;
+}
+#b5{
+    height: 100px;
+    width: 100px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+}
+#b6{
+    height: 100px;
+    width: 200px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+}
+#b7{
+    height: 100px;
+    width: 100px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-top-left-radius: 100%;
+    
+}
+#b8{
+    height: 100px;
+    width: 200px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 100%;
+}
+#b9{
+    height: 100px;
+    width: 100px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-style: ridge;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px ;
+}
+#b10{
+    height: 100px;
+    width: 300px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    border-start-end-radius: 100%;
+    border-end-start-radius: 100%;
+    border-style:groove;
+}
+#b11{
+    width: 750px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blue;
+    color: rgba(0, 0, 0, 0);
+}
+
+table{
+    border-spacing: 50px;
+    background-image: url("./lake-blue-moonlight-moon-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+table tr:nth-child(odd){
+    background-color: #ffffff00;
+}
+table tr:nth-child(even){
+    background-color: #00eeff00;
+}
+hr{
+    background-color: black;
+    height: 30px;
+}

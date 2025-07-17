@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* !===============================navbar1=========================================== */
+
+#maincontainer{
+    display: flex;
+    height: 41px;
+    justify-content: center;
+    align-items: center;
+    width: 1159px;
+}
+
+#maincontainer div{
+    background-color: black;
+    color: white;
+    align-content: center;
+    border: 1px solid grey;
+    padding: 12px;
+}
+#maincontainer div.class1{
+    flex-grow: 1;
+    position: relative;
+}
+#maincontainer div.class2{
+    flex-grow: 1;
+}
+
+#maincontainer div.class9{
+    flex-grow: 1;
+    position: relative;
+}
+#maincontainer div.class10{
+    padding: 7px;
+    position: relative;
+}
+.class1>img{
+    position: absolute;
+    height: 41px;
+    width: 137px;
+    top: 1px;
+}
+#signin{
+    margin-left: 2px;
+}
+#searchbar{
+    position: absolute;
+    right: 4px;
+    top: 13px;
+    color: black;
+    right: 15px;
+}
+#class9{
+    position: absolute;
+}
+#dropdown{
+    position: absolute;
+    right: 10px;
+}
+.class10>input{
+    width: 239px;
+    height: 28px;
+}
+
+/* ! =============================navbar2======================================================= */
+
+#maincontainer22{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 1159px;
+}
+#maincontainer22>#leftside22{
+    display: flex;
+    height: 41px;
+    justify-content: space-around;
+    align-items: center;
+    width: 1159px;
+}
+#maincontainer22>#rightside22{
+    display: flex;
+    height: 41px;
+    justify-content: end;
+    align-items: center;
+    width: 1159px;
+}
+#rightside22 div{
+    padding: 0px 20px;
+}
+#leftside22 div{
+    text-wrap: nowrap;
+    padding: 0px 10px;
+}
+#leftside22 img{
+    width: 61px;
+    height: 39px;
+    margin-left: 12px;
+    margin-right: -10px;
+}
+
+/* !==================================navbar3===================================================== */
+#maincontainer33{
+    display: flex;
+    width: 1159px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 3px black;
+}
+#leftside{
+    font-size: 38px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    width: 1159px;
+    justify-content: start;
+    align-items: center;
+}
+#leftside div{
+    padding:16px;
+}
+#leftside div.class31{
+    color: rgb(37, 164, 243);
+}
+.class32 input{
+    font-size: 19px;
+}
+.class32{
+    position: relative;
+    font-size: 23px;
+}
+#searchbar{
+    position: absolute;
+    right: 22px;
+    top: 20px;
+}
+#rightside{
+    font-size: 23px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 470px;
+    align-items: center;
+    color: rgb(163, 163, 163);
+}
+.class31:hover{
+    color: black;
+}
+.class32:hover{
+    color: black;
+}
+.class33:hover{
+    color: black;
+}
+.class34:hover{
+    color: black;
+}
+.class35:hover{
+    color: black;
+}
+.class36:hover{
+    color: black;
+}
+.class37:hover{
+    color: black;
+}
+.class38:hover{
+    color: black;
+}
+#rightside img{
+    width: 42px;
+    height: 42px;
+    top: 4px;
+    position: relative;
+}
+
+
+/* !===================================navbar4=============================================== */
+
+#mainContainer44{
+    box-shadow: 0px 0px 5px 5px;
+    display: flex;
+    width: 1159px;
+    height: 54px;
+}
+.leftside44{
+   
+    display: flex;
+    width: 1159px;
+    height: 54px;
+    justify-content: start;
+    align-items: center;
+}
+.leftside44>div#logo41{
+    font-size: 25px;
+    padding: 10px;
+}
+.center44{
+    display: flex;
+    width: 1159px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+}
+.center44 input{
+    font-size: 15px;
+    text-align: center;
+}
+.center44 #searchbar41{
+    position: relative;
+}
+#searchbar1{
+    position: absolute;
+    right: 62px;
+    top: 3px;
+    font-size: 13px;
+}
+.rightside44{
+    display: flex;
+    width: 1159px;
+    height: 54px;
+    justify-content: end;
+}
+.rightside44 div{
+    align-self:center;
+    margin-right: 31px;
+    font-size: 22px;
+}

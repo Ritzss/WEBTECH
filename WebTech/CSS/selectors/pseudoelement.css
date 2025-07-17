@@ -1,0 +1,22 @@
+p::before{
+    content: "Mr. ";
+}
+
+p::after{
+    content: ", NO son of mine will listen to tailor swift";
+}
+div::selection{
+    color: rgb(139, 0, 0);
+    background-color: grey;
+}
+
+ul::marker{
+    color: red;
+}
+div::first-letter{
+    color: rgb(166, 78, 15);
+    background-color: aqua;
+}
+div::first-line{
+    background-color: green;
+}

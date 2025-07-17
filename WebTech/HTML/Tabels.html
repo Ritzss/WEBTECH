@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>   
+    <style>
+        table{
+            border-color: white;
+            border:10px rgb(0, 0, 0) solid;
+        }
+        #cp{
+            font-size: 25px;
+        }
+        #r11{
+            background-color: rgb(147, 53, 64);
+            color: white;
+        }
+        #r12{
+            background-color:white;
+            color: white;
+        }
+        #r13{
+            background-color: rgb(13, 123, 192);
+            color: white;
+        }
+        #r14{
+             color: white;
+            background-color: rgb(4, 150, 4);
+        }
+        #hr{
+            border-width: 10px;
+        }
+    </style>                                                                                                             </title>
+</head>
+<body>
+    <h1>Tables</h1>
+    <p>Table with border and header tag</p>
+    <!-- 
+    ?Tags:
+    Table   --It is used to define tables.
+    TR      --It is used to define table rows.
+    TD      --It is used to define table data.
+    TH      --It is used to define table headers.
+    THead   --It is used to contaim table headers.
+    TBody   --It is uesd to contain table bode.
+    TFoot   --It is used to contain table footer.
+    caption --It is used to define table captions.
+    ?Attributes
+    Border      --Used to set the border of the table.
+    cellpadding --used to set the space between cell and border.
+    cellspacing --used to set the space between cells.
+    colspan     --Used to set the number of columns a cell span.
+    rowspan     --Used to set the number of rows of a cell span.
+      -->
+    <Table border="">
+        <tr>
+            <th>S.NO</th>
+            <th>SNAME</th>
+            <th>Qualification</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>manas</td>
+            <td>Btech CSE</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>prashant singh </td>
+            <td>BCA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>kushagra</td>
+            <td>Mtech CSE</td>
+        </tr>
+
+    </Table>
+    <hr>
+    <p>Table with header tag</p>
+    <Table >
+        <tr>
+            <th>S.NO</th>
+            <th>SNAME</th>
+            <th>Qualification</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>manas</td>
+            <td>Btech CSE</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>prashant singh </td>
+            <td>BCA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>kushagra</td>
+            <td>Mtech CSE</td>
+        </tr>
+
+    </Table>
+    <hr>
+    <p>Table with border</p>
+    <Table border="">
+        <tr>
+            <td>S.NO</td>
+            <td>SNAME</td>
+            <td>Qualification</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>manas</td>
+            <td>Btech CSE</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>prashant singh </td>
+            <td>BCA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>kushagra</td>
+            <td>Mtech CSE</td>
+        </tr>
+    </Table>
+    <hr>
+    <p>table with cellpadding and cell spacing with border</p>
+    <Table border="" cellpading="3" cellsapcing="4">
+        <tr>
+            <td>S.NO</td>
+            <td>SNAME</td>
+            <td>Qualification</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>manas</td>
+            <td>Btech CSE</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>prashant singh </td>
+            <td>BCA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>kushagra</td>
+            <td>Mtech CSE</td>
+        </tr>
+    </Table>
+    <hr>
+    <p>table with col-span and row-span</p>
+    <Table border="">
+        <tr>
+            <td>S.NO</td>
+            <td colspan="2">Details</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>manas</td>
+            <td rowspan="2">Btech CSE</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>prashant singh </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>kushagra</td>
+            <td>Mtech CSE</td>
+        </tr>
+    </Table>
+    <hr>
+    <p>Table with thead, tbody and tfoot</p>
+    <Table border="">
+        <Thead style="background-color:lightblue;">
+            <tr>
+                <td>S.NO</td>
+                <td>SNAME</td>
+                <td>Qualification</td>
+            </tr>
+        </Thead>
+        <tbody style="background-color: aqua;">
+            <tr>
+                <td>1</td>
+                <td>manas</td>
+                <td>Btech CSE</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>prashant singh </td>
+                <td>BCA</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>kushagra</td>
+                <td>Mtech CSE</td>
+            </tr>
+        </tbody> 
+        <tfoot style="background-color:seagreen;">
+            <tr>
+                <td colspan="3">Contact us: <a href="callto:9958186814">Click here</a></td>
+            </tr>
+        </tfoot>
+    </Table>
+    <hr>
+    <p>table with caption</p>
+    <Table border="">
+        <caption>MY new table</caption>
+        <Thead style="background-color:lightblue;">
+            <tr>
+                <td>S.NO</td>
+                <td>SNAME</td>
+                <td>Qualification</td>
+            </tr>
+        </Thead>
+        <tbody style="background-color: aqua;">
+            <tr>
+                <td>1</td>
+                <td>manas</td>
+                <td>Btech CSE</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>prashant singh </td>
+                <td>BCA</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>kushagra</td>
+                <td>Mtech CSE</td>
+            </tr>
+        </tbody> 
+        <tfoot style="background-color:seagreen;">
+            <tr>
+                <td colspan="3">Contact us: <a href="callto:9958186814">Click here</a></td>
+            </tr>
+        </tfoot>
+    </Table>
+    <hr>
+    <p>chessboard</p>
+<center>
+    <table cellpadding="30" cellspacing="0" border="1">
+        <caption>Chessboard</caption>
+        <tr>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color:black"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color:black"></td>
+            <td style="background-color:white"></td>
+        </tr>
+        <tr>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color:black"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color:black"></td>
+            <td style="background-color:white"></td>
+        </tr>
+        <tr>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color:black"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color:black"></td>
+            <td style="background-color:white"></td>
+        </tr>
+        <tr>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color:black"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color:black"></td>
+            <td style="background-color:white"></td>
+        </tr>
+        <tr>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+            <td style="background-color:white"></td>
+            <td style="background-color: black;"></td>
+        </tr>
+    </table>
+</center>
+<p>mergecells</p>
+<table border="" cellpadding="30">
+    <caption><i>A test table with merged cells</i></caption>
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="2"><center><b>Average</b></center></td>
+        <td rowspan="2"><b>Red Eyes</b></td>
+    </tr>
+    <tr> 
+    <td style="color: black;"><b>height</b></td>
+    <td style="color: black;"><b>weight</b></td>
+    </tr>
+    <tr>
+        <td style="color: black;"><b>Males</b></td>
+        <td style="color: black;">1.9</td>
+        <td style="color: black;">0.003</td>
+        <td style="color: black;">40%</td>
+    </tr>
+    <tr>
+        <td style="color: black;"><b>Females</b></td>
+        <td style="color: black;">1.7</td>
+        <td style="color: black;">0.002</td>
+        <td style="color: black;">43%</td>
+    </tr>
+</table>
+<hr id="hr">
+<table cellpadding="20">
+    <tbody>
+    <caption><i><u id="cp">Periodic Table of Elements</u></i></caption>
+    <tr>
+        <td id="r11"><sup>1</sup><sub>H</sub></td>
+        <td id="r12" colspan="16"></td>
+        <td id="r11"><sup>2</sup><sub>He</sub></td>
+    </tr>
+    <tr>
+        <td id="r13"><sup>3</sup><sub>Li</sub></td>
+        <td id="r13"><sup>4</sup><sub>Be</sub></td>
+        <td id="r12" colspan="10"></td>
+        <td id="r14"><sup>5</sup><sub>B</sub></td>
+        <td id="r11"><sup>6</sup><sub>C</sub></td>
+        <td id="r11"><sup>7</sup><sub>N</sub></td>
+        <td id="r11"><sup>9</sup><sub>O</sub></td>
+        <td id="r11"><sup>8</sup><sub>F</sub></td>
+        <td id="r11"><sup>10</sup><sub>Ne</sub></td>
+    </tr>
+    <tr> 
+        <td id="r13"><sup>11</sup><sub>Na</sub></td>
+        <td id="r13"><sup>12</sup><sub>Mg</sub></td>
+        <td id="r12" colspan="10"></td>
+        <td id="r13"><sup>13</sup><sub>Ai</sub></td>
+        <td id="r14"><sup>14</sup><sub>Si</sub></td>
+        <td id="r11"><sup>15</sup><sub>P</sub></td>
+        <td id="r11"><sup>16</sup><sub>S</sub></td>
+        <td id="r11"><sup>17</sup><sub>Cl</sub></td>
+        <td id="r11"><sup>18</sup><sub>Ar</sub></td>
+    </tr>
+    <tr> 
+        <td id="r13"><sup>19</sup><sub>K</sub></td>
+        <td id="r13"><sup>20</sup><sub>Ca</sub></td>
+        <td id="r13"><sup>21</sup><sub>Sc</sub></td>
+        <td id="r13"><sup>22</sup><sub>Ti</sub></td>
+        <td id="r13"><sup>23</sup><sub>V</sub></td>
+        <td id="r13"><sup>24</sup><sub>Cr</sub></td>
+        <td id="r13"><sup>25</sup><sub>Mn</sub></td>
+        <td id="r13"><sup>26</sup><sub>Fe</sub></td>
+        <td id="r13"><sup>27</sup><sub>Co</sub></td>
+        <td id="r13"><sup>28</sup><sub>Ni</sub></td>
+        <td id="r13"><sup>29</sup><sub>Cu</sub></td>
+        <td id="r13"><sup>30</sup><sub>Zn</sub></td>
+        <td id="r13"><sup>31</sup><sub>Ga</sub></td>
+        <td id="r14"><sup>32</sup><sub>Ge</sub></td>
+        <td id="r14"><sup>33</sup><sub>As</sub></td>
+        <td id="r11"><sup>34</sup><sub>Se</sub></td>
+        <td id="r11"><sup>35</sup><sub>Br</sub></td>
+        <td id="r11"><sup>36</sup><sub>Kr</sub></td>
+    </tr>
+    <tr>
+        <td id="r13"><sup>37</sup><sub>Rb</sub></td>
+        <td id="r13"><sup>38</sup><sub>Sr</sub></td>
+        <td id="r13"><sup>39</sup><sub>Y</sub></td>
+        <td id="r13"><sup>40</sup><sub>Zr</sub></td>
+        <td id="r13"><sup>41</sup><sub>Nb</sub></td>
+        <td id="r13"><sup>42</sup><sub>Mo</sub></td>
+        <td id="r13"><sup>43</sup><sub>Tc</sub></td>
+        <td id="r13"><sup>44</sup><sub>Ru</sub></td>
+        <td id="r13"><sup>45</sup><sub>Rh</sub></td>
+        <td id="r13"><sup>46</sup><sub>Pd</sub></td>
+        <td id="r13"><sup>47</sup><sub>Ag</sub></td>
+        <td id="r13"><sup>48</sup><sub>Cd</sub></td>
+        <td id="r13"><sup>49</sup><sub>In</sub></td>
+        <td id="r13"><sup>50</sup><sub>Sn</sub></td>
+        <td id="r14"><sup>51</sup><sub>Sb</sub></td>
+        <td id="r14"><sup>52</sup><sub>Te</sub></td>
+        <td id="r11"><sup>53</sup><sub>I</sub></td>
+        <td id="r11"><sup>54</sup><sub>Xe</sub></td>
+    </tr>
+    <tr>
+        <td id="r13"><sup>55</sup><sub>Cs</sub></td>
+        <td id="r13"><sup>56</sup><sub>Ba</sub></td>
+        <td id="r12" rowspan="2"></td>
+        <td id="r13"><sup>72</sup><sub>Hf</sub></td>
+        <td id="r13"><sup>73</sup><sub>Ta</sub></td>
+        <td id="r13"><sup>74</sup><sub>W</sub></td>
+        <td id="r13"><sup>75</sup><sub>Re</sub></td>
+        <td id="r13"><sup>76</sup><sub>Os</sub></td>
+        <td id="r13"><sup>77</sup><sub>Ir</sub></td>
+        <td id="r13"><sup>78</sup><sub>Pt</sub></td>
+        <td id="r13"><sup>79</sup><sub>Au</sub></td>
+        <td id="r13"><sup>80</sup><sub>Hg</sub></td>
+        <td id="r13"><sup>81</sup><sub>Ti</sub></td>
+        <td id="r13"><sup>82</sup><sub>Pb</sub></td>
+        <td id="r13"><sup>83</sup><sub>Bi</sub></td>
+        <td id="r13"><sup>84</sup><sub>Po</sub></td>
+        <td id="r14"><sup>85</sup><sub>At</sub></td>
+        <td id="r11"><sup>86</sup><sub>Rn</sub></td>
+    </tr>
+    <tr>
+        <td id="r13"><sup>87</sup><sub>Fr</sub></td>
+        <td id="r13"><sup>88</sup><sub>Ra</sub></td>
+        <td id="r13"><sup>104</sup><sub>Rf</sub></td>
+        <td id="r13"><sup>105</sup><sub>Db</sub></td>
+        <td id="r13"><sup>106</sup><sub>Sg</sub></td>
+        <td id="r13"><sup>107</sup><sub>Bh</sub></td>
+        <td id="r13"><sup>108</sup><sub>Hs</sub></td>
+        <td id="r13"><sup>109</sup><sub>Mt</sub></td>
+        <td id="r13"><sup>110</sup><sub>Ds</sub></td>
+        <td id="r13"><sup>111</sup><sub>Rg</sub></td>
+        <td id="r13"><sup>112</sup><sub>Cn</sub></td>
+        <td id="r12" colspan="7"></td>
+    </tr>
+    <tr>
+        <td id="r12" colspan="18"></td>
+    </tr>
+    <tr>
+        <td id="r12" colspan="3"></td>
+        <td id="r13"><sup>57</sup><sub>La</sub></td>
+        <td id="r13"><sup>58</sup><sub>Ce</sub></td>
+        <td id="r13"><sup>59</sup><sub>Pr</sub></td>
+        <td id="r13"><sup>60</sup><sub>Nd</sub></td>
+        <td id="r13"><sup>61</sup><sub>Pm</sub></td>
+        <td id="r13"><sup>62</sup><sub>Sm</sub></td>
+        <td id="r13"><sup>63</sup><sub>Eu</sub></td>
+        <td id="r13"><sup>64</sup><sub>Gd</sub></td>
+        <td id="r13"><sup>65</sup><sub>Tb</sub></td>
+        <td id="r13"><sup>66</sup><sub>Dy</sub></td>
+        <td id="r13"><sup>67</sup><sub>Ho</sub></td>
+        <td id="r13"><sup>68</sup><sub>Er</sub></td>
+        <td id="r13"><sup>69</sup><sub>Tm</sub></td>
+        <td id="r13"><sup>70</sup><sub>Yb</sub></td>
+        <td id="r13"><sup>71</sup><sub>Lu</sub></td>
+    </tr>
+    <tr>
+        <td id="r12" colspan="3"></td>
+        <td id="r13"><sup>89</sup><sub>Ac</sub></td>
+        <td id="r13"><sup>90</sup><sub>Th</sub></td>
+        <td id="r13"><sup>91</sup><sub>Pa</sub></td>
+        <td id="r13"><sup>92</sup><sub>U</sub></td>
+        <td id="r13"><sup>93</sup><sub>Np</sub></td>
+        <td id="r13"><sup>94</sup><sub>Pu</sub></td>
+        <td id="r13"><sup>95</sup><sub>Am</sub></td>
+        <td id="r13"><sup>96</sup><sub>Cm</sub></td>
+        <td id="r13"><sup>97</sup><sub>Bk</sub></td>
+        <td id="r13"><sup>98</sup><sub>Cf</sub></td>
+        <td id="r13"><sup>99</sup><sub>Es</sub></td>
+        <td id="r13"><sup>100</sup><sub>Fm</sub></td>
+        <td id="r13"><sup>101</sup><sub>Md</sub></td>
+        <td id="r13"><sup>102</sup><sub>No</sub></td>
+        <td id="r13"><sup>103</sup><sub>Lr</sub></td>
+    </tr>
+    </tbody>
+</table>
+</body> 
+</html>

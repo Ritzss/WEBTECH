@@ -1,0 +1,47 @@
+/* Selectors:
+?types of selector::
+simple:
+   ?types of simple selector::
+   1.tagname
+   2.grouping(,)
+   3.id(#)
+   4.class(.)
+   5.universal(*)
+combinator:
+   ?types of combinator selector::
+   1.Descendant( )
+   2.Direct Child(>)
+   3.ADJ Sibling(+)
+   4.Gen Sibling(~)
+psuedo class:
+   ?types of pseudo class::
+   1.hover
+   2.firstchild
+   3.lastchild
+   4.nth child
+   5.first of child
+   6.last of child
+   7.
+   8.
+   9.
+   10.
+   11.
+psuedo element: 
+   ?types of pseudo element::
+attribute:
+   ?types of attribute selector::
+*/
+
+p{
+   color: white;
+   background-color: chocolate;
+}
+
+aside,section{
+   color: black;
+   background-color: aqua;
+}
+
+*{
+   background-color: rgb(0, 0, 0);
+}

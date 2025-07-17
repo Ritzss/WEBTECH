@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #ddd;
+            color: white;
+            position: relative;
+        }
+        
+        .metal { background-color: #2176ae; } /* Metals */
+        .metalloid { background-color: #33a02c; } /* Metalloids */
+        .nonmetal { background-color: #e31a1c; } /* Nonmetals */
+        .empty { background: transparent; border: none; }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- Row 1 -->
+    <tr>
+        <td class="nonmetal"><span class="atomic-number">1</span>H</td>
+        <td colspan="16" class="empty"></td>
+        <td class="nonmetal"><span class="atomic-number">2</span>He</td>
+    </tr>
+
+    <!-- Row 2 -->
+    <tr>
+        <td class="metal"><span class="atomic-number">3</span>Li</td>
+        <td class="metal"><span class="atomic-number">4</span>Be</td>
+        <td colspan="10" class="empty"></td>
+        <td class="metalloid"><span class="atomic-number">5</span>B</td>
+        <td class="nonmetal"><span class="atomic-number">6</span>C</td>
+        <td class="nonmetal"><span class="atomic-number">7</span>N</td>
+        <td class="nonmetal"><span class="atomic-number">8</span>O</td>
+        <td class="nonmetal"><span class="atomic-number">9</span>F</td>
+        <td class="nonmetal"><span class="atomic-number">10</span>Ne</td>
+    </tr>
+
+    <!-- Row 3 -->
+    <tr>
+        <td class="metal"><span class="atomic-number">11</span>Na</td>
+        <td class="metal"><span class="atomic-number">12</span>Mg</td>
+        <td colspan="10" class="empty"></td>
+        <td class="metal"><span class="atomic-number">13</span>Al</td>
+        <td class="metalloid"><span class="atomic-number">14</span>Si</td>
+        <td class="nonmetal"><span class="atomic-number">15</span>P</td>
+        <td class="nonmetal"><span class="atomic-number">16</span>S</td>
+        <td class="nonmetal"><span class="atomic-number">17</span>Cl</td>
+        <td class="nonmetal"><span class="atomic-number">18</span>Ar</td>
+    </tr>
+
+    <!-- Row 4 -->
+    <tr>
+        <td class="metal"><span class="atomic-number">19</span>K</td>
+        <td class="metal"><span class="atomic-number">20</span>Ca</td>
+        <td class="metal"><span class="atomic-number">21</span>Sc</td>
+        <td class="metal"><span class="atomic-number">22</span>Ti</td>
+        <td class="metal"><span class="atomic-number">23</span>V</td>
+        <td class="metal"><span class="atomic-number">24</span>Cr</td>
+        <td class="metal"><span class="atomic-number">25</span>Mn</td>
+        <td class="metal"><span class="atomic-number">26</span>Fe</td>
+        <td class="metal"><span class="atomic-number">27</span>Co</td>
+        <td class="metal"><span class="atomic-number">28</span>Ni</td>
+        <td class="metal"><span class="atomic-number">29</span>Cu</td>
+        <td class="metal"><span class="atomic-number">30</span>Zn</td>
+        <td class="metal"><span class="atomic-number">31</span>Ga</td>
+        <td class="metalloid"><span class="atomic-number">32</span>Ge</td>
+        <td class="metalloid"><span class="atomic-number">33</span>As</td>
+        <td class="nonmetal"><span class="atomic-number">34</span>Se</td>
+        <td class="nonmetal"><span class="atomic-number">35</span>Br</td>
+        <td class="nonmetal"><span class="atomic-number">36</span>Kr</td>
+    </tr>
+
+    <!-- More rows continue similarly -->
+</table>
+
+</body>
+</html>

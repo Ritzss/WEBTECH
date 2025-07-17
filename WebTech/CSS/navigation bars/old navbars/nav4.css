@@ -1,0 +1,19 @@
+#containerone{
+background-color: #ffffff ;
+display: flex;
+padding:  0px 107px;
+
+}
+#containerone .leftPart{
+    display: flex;
+    justify-content: start;
+    width: 1600px;
+    column-gap: 20px;
+
+}
+#containerone .rightPart{
+    display: flex;
+    justify-content: end;
+    width: 1600px;
+
+}

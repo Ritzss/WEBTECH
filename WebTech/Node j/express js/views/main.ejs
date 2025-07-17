@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!--
+    <h1>Hello I am from<%= page %>file</h1>
+    <hr />
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius recusandae
+      quae velit amet perspiciatis at est dolorem sapiente quod, praesentium
+      ratione nisi quo! Quasi consectetur libero nesciunt blanditiis hic itaque?
+    </p>
+-->
+  <!-- !====data types=== -->
+
+  <!-- ? strings,number,boolean -->
+  <p><b>Page:</b>
+    <%= page %>
+  </p>
+  <p><b>PageInfo:</b>
+    <%= pageInfo %>
+  </p>
+  <p><b>PageInfo2:</b>
+    <%= pageInfo2 %>
+  </p>
+  <p><b>PageInfo3:</b>
+    <%- pageInfo2 %>
+  </p>
+  <p><b>Name:</b>
+    <%= username %>
+  </p>
+  <p><b>Email:</b>
+    <%= useremail %>
+  </p>
+  <p><b>PhoneNo.:</b>
+    <%= userno %>
+  </p>
+  <p><b>isNodeStudent:</b>
+    <%= isNodeStudent %>
+  </p>
+
+  <!-- ? Array -->
+  <p><b>Students:</b>
+    <%= student %>
+  </p>
+  <p><b>Students:</b>
+    <%= student.join(" , ") %>
+  </p>
+  <p><b>Students:</b>
+    <%= student.join(" _ ") %>
+  </p>
+
+  <!-- ? Object -->
+  <p><b>TrainerName:</b>
+    <%= trainer.trainername %>
+  </p>
+  <p><b>TrainerEmail:</b>
+    <%= trainer.traineremail %>
+  </p>
+  <p><b>Subjects:</b>
+    <%= trainer.subject.join(" , ") %>
+  </p>
+  <p><b>Subjects:</b>
+    <%= trainer.subject %>
+  </p>
+
+  <!-- ? Undefined, null & bigint -->
+  <p><b>isMarried:</b>
+    <%= isMarried %>
+  </p>
+  <p><b>mockRating:</b>
+    <%= mockrating %>
+  </p>
+  <p><b>Salary:</b>
+    <%= salary %>
+  </p>
+
+  <!-- ! =========CONDITIONAL SATEMENT ============ -->
+  <!-- ? IF Condition -->
+  <% if (isPlaced) { %>
+  <p><b>Pranchi Got Placed</b></p>
+
+
+  <% } %>
+  <!-- ? IF ELSE Condition -->
+  <% if (isPlaced) { %>
+  <p><b>
+      <% username %>Got Placed
+    </b></p>
+
+
+  <% } else { %>
+  <p><b>
+      <% username %>Not Got Placed
+    </b></p>
+
+
+  <% } %>
+  <!-- ? IF ElSE IF ELSECondition -->
+  <!-- example 1 -->
+  <% if(course == "JFS") { %>
+  <p><b>Course is:</b> <%= course %></p>
+  <% }  else if(course == "PFS") { %>
+  <p><b>Course is:</b> <%= course %></p>
+  <% }  else if(course == "mern") { %>
+  <p><b>Course is:</b> <%= course %></p>
+  <% } else { %>
+  <p><b>Course is:</b> you have to choose between jfs/pfs/mern</p>
+  <% } %>
+
+  <!-- example 2  -->
+  <% if(course == "JFS") { %>
+  <p><b>Course is:</b> Java Full Stack</p>
+  <% } else if(course == "PFS") { %>
+  <p><b>Course is:</b> Python Full Stack</p>
+  <% } else if(course == "mern") { %>
+  <p><b>Course is:</b> MERN Full Stack</p>
+  <% } else { %>
+  <p><b>Course is:</b> you have to choose between jfs/pfs/mern</p>
+  <% } %>
+
+  <!-- example 3 -->
+  <p><b>Course is:</b>
+    <% if(course == "JFS") { %>
+    Java Full Stack
+    <% } else if(course == "PFS") { %>
+    Python Full Stack
+    <% } else if(course == "mern") { %>
+    MERN Full Stack
+    <% } else { %>
+  <p>you have to choose between jfs/pfs/mern</p>
+  <% } %>
+  </p>
+  <!-- ? Switch Case Condition -->
+
+  <!-- ? Ternary OperatorCondition -->
+
+  <!-- !Declaration variable -->
+  <% let a = 10;
+    let b = 20;
+    let c = 30;
+    
+    function greet(name){
+      return `Hello ${name}`
+    }
+    %>
+
+  <p>a : <%= a %></p>
+  <p>b : <%= b %></p>
+  <p>c : <%= c %></p>
+  <p>greet Manav : <%= greet("manav") %></p>
+  <p>greet Rahul : <%= greet("rahul") %></p>
+  <p>greet Ajit : <%= greet("Ajit") %></p>
+
+  <!-- !LOOPING -->
+  <h1>loopss.....</h1>
+  <!-- ? While LOOP-->
+  <h2>While Loop</h2>
+  <!-- ~ Example 1 -->
+  <% 
+   let i = 1;
+   while (i <= 10) { %>
+  <p> I am a new line: <%= i %></p>
+  <% i++;
+   } %>
+
+
+  <%
+  let j = 0;
+  while(j<student.length){ %>
+  <p><b>Student Name: </b><%= student[j] %></p>
+  <% j++;
+  }  %>
+
+  <!-- ? For LOOP-->
+  <h2>for loop</h2>
+  <% for(let index = 0 ; index < student.length; index++){     
+    let name = student[index]; %>
+
+  <p><b>Student Name:</b><%= name %></p>
+
+  <% } %>
+  <!-- ? For in LOOP-->
+  <h2>for in Loop</h2>
+  <%for(let index in student){%>
+  <p><b>Student name:</b> <%= student[index] %></p>
+  <% } %>
+
+  <!-- ? for of LOOP-->
+  <h2>for of Loop</h2>
+  <%for(let value of student){%>
+  <p><b>Student name:</b> <%= value %></p>
+  <%= greet(value) %>
+  <% } %>
+
+  <!-- ? ForEach LOOP-->
+  <h2>foreach loop</h2>
+  <% trainer.subject.forEach(element =>{ %>
+  <p>Subject name: <%= element %></p>
+  <% }); %>
+
+  <!-- ? Map Method-->
+  <h2>Map Method</h2>
+  <% trainer.subject.map(val => {%>
+  <p>subject name: <%= val %></p>
+  <% }) %>
+
+  <!-- ? filter method-->
+  <h2>filter method</h2>
+  <%= student.filter(val =>val.length > 4)%>
+  <% student.filter(val =>val.length > 4).map(val => { %>
+  <p><b>Student Name:</b> <%= val %></p>
+  <% }) %>
+
+
+
+
+
+
+</body>
+
+</html>

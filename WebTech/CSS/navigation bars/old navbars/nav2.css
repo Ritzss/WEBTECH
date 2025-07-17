@@ -1,0 +1,16 @@
+div{
+    display: inline-block;
+    text-align: center;
+    width: 106px;
+    height: 46px;
+    padding: 0px;
+    color: white;
+    MARGIN-TOP: 22px;
+}
+#containerone{
+    background-color: rgb(5, 1, 41);
+}
+#div2{
+    margin-left: 639px;
+    
+}

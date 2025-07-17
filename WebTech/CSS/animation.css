@@ -1,0 +1,232 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    height:773px;
+    border: solid black;
+}
+audio{
+    position: absolute;
+    width: 100px;
+    right: 12px;
+    height: 10px;
+
+}
+#box1{
+animation-name: ben10intro;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes ben10intro{
+    0%{
+        background-image: url(./aniimages/benimage/op1.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    2.5%{
+        background-image:url(./aniimages/benimage/op2.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    5%{
+        background-image:url(./aniimages/benimage/op3.webp);
+        background-size: contain;
+        background-repeat: no-repeat; 
+    }
+    7.5%{
+        background-image:url(./aniimages/benimage/op4.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    10%{
+        background-image:url(./aniimages/benimage/op5.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    12.5%{
+        background-image:url(./aniimages/benimage/op6.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    15%{
+        background-image:url(./aniimages/benimage/op7.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    17.5%{
+        background-image:url(./aniimages/benimage/op8.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    20%{
+        background-image:url(./aniimages/benimage/op9.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    22.5%{
+        background-image:url(./aniimages/benimage/op10.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image:url(./aniimages/benimage/op11.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    27.5%{
+        background-image:url(./aniimages/benimage/op12.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    30%{
+        background-image:url(./aniimages/benimage/op13.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    32.5%{
+        background-image:url(./aniimages/benimage/op14.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    35%{
+        background-image:url(./aniimages/benimage/op15.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    37.5%{
+        background-image:url(./aniimages/benimage/op16.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    40%{
+        background-image:url(./aniimages/benimage/op17.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    42.5%{
+        background-image:url(./aniimages/benimage/op18.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    45%{
+        background-image:url(./aniimages/benimage/op19.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    47.5%{
+        background-image:url(./aniimages/benimage/op20.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image:url(./aniimages/benimage/op21.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    52.5%{
+        background-image:url(./aniimages/benimage/op22.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    55%{
+        background-image:url(./aniimages/benimage/op23.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    57.5%{
+        background-image:url(./aniimages/benimage/op24.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    60%{
+        background-image:url(./aniimages/benimage/op25.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    62.5%{
+        background-image:url(./aniimages/benimage/op26.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    65%{
+        background-image:url(./aniimages/benimage/op27.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    67.5%{
+        background-image:url(./aniimages/benimage/op28.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    70%{
+        background-image:url(./aniimages/benimage/op29.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    72.5%{
+        background-image:url(./aniimages/benimage/op30.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image:url(./aniimages/benimage/op31.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    77.5%{
+        background-image:url(./aniimages/benimage/op32.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    80%{
+        background-image:url(./aniimages/benimage/op33.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    82.5%{
+        background-image:url(./aniimages/benimage/op34.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    85%{
+        background-image:url(./aniimages/benimage/op35.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    87.5%{
+        background-image:url(./aniimages/benimage/op36.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    90%{
+        background-image:url(./aniimages/benimage/op37.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    92.5%{
+        background-image:url(./aniimages/benimage/op38.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    95%{
+        background-image:url(./aniimages/benimage/op39.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    97.5%{
+        background-image:url(./aniimages/benimage/op40.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image:url(./aniimages/benimage/op41.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+

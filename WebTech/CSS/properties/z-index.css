@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainContainer{
+    height: 1200px;
+    width: 1530px;
+    background-color: aqua;
+    border: solid red;
+    position: relative;
+}
+#mainContainer .categories{
+    position: relative;
+    width: 1000px;
+    border: solid blue;
+    margin: 30px auto;
+}
+#mainContainer .categories .cards{
+    position: relative;
+    height: 270px;
+    width: 190px;
+    border: solid green;
+    margin: 30px 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjq0Vc4xkATDrk0nMgmaRQAF72lUyqAFAOyQ&s') ;
+}
+#mainContainer .categories .cards>button{
+    position: absolute;
+    bottom: 120px;
+    right: 70px;
+
+}

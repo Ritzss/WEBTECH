@@ -1,0 +1,13 @@
+#containerone{
+    display:flex;
+    background-color: #142129;
+}
+#containerone div{
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding:10px;
+}
+#containerone div:hover{
+    background-color: black;
+}

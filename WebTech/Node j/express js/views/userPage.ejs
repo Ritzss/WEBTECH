@@ -1,0 +1,10 @@
+<%- include("./partials/header.ejs") %>
+<h1 style="text-align: center;position: relative;top: -64px;">User Data</h1>
+
+<div id="container">
+  <% users.map((val,ind)=>{ %>
+  <%- include("./partials/usercard.ejs",{val}) %>
+  <% }) %>
+</div>
+
+<%- include("./partials/footer.ejs") %>

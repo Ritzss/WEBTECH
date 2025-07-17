@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainContainer{
+    display: flex;
+    height: 200px;
+    width: 700px;
+    background-color: green;
+    border: solid yellow;
+    justify-content: start;
+    /* align items acc. to x-axis
+    values that can be passes are : start,end,center,space-evenly,space-around,space-between
+    it will make content responsive*/
+    align-items: start;
+    /* align items acc. to y-axis
+    values that can be passes are : start,end,center */
+
+    flex-wrap: wrap;
+/*     
+    flex-direction: row;
+    
+    gap: 10px 10px;
+    align-content: start; */
+}
+#mainContainer2{
+    display: flex;
+    height: 200px;
+    width: 700px;
+    background-color: white;
+    border: solid black;
+    justify-content: start;
+    /* align items acc. to x-axis
+    values that can be passes are : start,end,center,space-evenly,space-around,space-between
+    it will make content responsive*/
+    align-items: start;
+    /* align items acc. to y-axis
+    values that can be passes are : start,end,center */
+
+    /* flex-wrap: wrap; */
+/*     
+    flex-direction: row;
+    
+    gap: 10px 10px;
+    align-content: start; */
+}
+#mainContainer3{
+    display: flex;
+    height: 200px;
+    width: 700px;
+    background-color: red;
+    border: solid blue;
+    justify-content: start;
+    /* align items acc. to x-axis
+    values that can be passes are : start,end,center,space-evenly,space-around,space-between
+    it will make content responsive*/
+    align-items: start;
+    /* align items acc. to y-axis
+    values that can be passes are : start,end,center */
+
+    flex-wrap: wrap;
+/*     
+    flex-direction: row;
+    
+    gap: 10px 10px;
+    align-content: start; */
+}
+#mainContainer div{
+    background-color: greenyellow;
+    height: 25px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    padding: 4px 28px;
+
+}
+#mainContainer div:nth-child(1){
+    flex-grow: 1;
+}
+#mainContainer div:nth-child(2){
+    flex-grow: 2;
+}
+#mainContainer div:nth-child(3){
+    flex-grow: 1;
+}
+#mainContainer div:nth-child(4){
+    flex-grow: 2;
+}
+#mainContainer div:nth-child(5){
+    flex-grow: 1;
+}
+#mainContainer div:nth-child(6){
+    flex-grow: 2;
+}
+#mainContainer2 div:nth-child(1){
+    width: 215px;
+    flex-shrink: 200;
+}
+#mainContainer2 div:nth-child(2){
+    width: 215px;
+    flex-shrink: 30;
+}
+#mainContainer2 div:nth-child(3){
+    width: 215px;
+    flex-shrink: 23;
+}
+#mainContainer2 div:nth-child(4){
+    width: 215px;
+    flex-shrink: 10;
+}
+#mainContainer2 div:nth-child(5){
+    width: 215px;
+    flex-shrink: 0;
+}
+#mainContainer2 div:nth-child(6){
+    width: 215px;
+    flex-shrink: 0;
+}
+#mainContainer3 div:nth-child(1){}
+#mainContainer3 div:nth-child(2){}
+#mainContainer3 div:nth-child(3){}
+#mainContainer3 div:nth-child(4){}
+#mainContainer3 div:nth-child(5){}
+#mainContainer3 div:nth-child(6){}
+#mainContainer2 div{
+    background-color: greenyellow;
+    height: 25px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    padding: 4px 28px;
+
+}
+#mainContainer3 div{
+    background-color: greenyellow;
+    height: 25px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    padding: 4px 28px;
+
+}

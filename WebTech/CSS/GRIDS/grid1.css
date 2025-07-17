@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#mainContainer{
+    height: 500px;
+    width: 800px;
+    /* background-color: darkblue; */
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+    gap: 10px;
+}
+
+#mainContainer #green1{
+    background-color: green;
+    grid-area:1/1/4/2 ;
+}
+#mainContainer #green2{
+    background-color: green;
+    grid-area:1/2/2/4 ;
+}
+#mainContainer #green3{
+    background-color: green;
+    grid-area:2/4/4/5 ;
+}
+#mainContainer #red1{
+    background-color: red;
+    grid-area: 1/4/1/4;
+}
+#mainContainer #red2{
+    background-color: red;
+    grid-area: 2/3/3/4;
+}
+#mainContainer #red3{
+    background-color: red;
+    grid-area: 3/2/4/3;
+}
+#mainContainer #yellow1{
+    background-color: yellow;
+    grid-area: 2/2/3/3;
+}
+#mainContainer #yellow2{
+    background-color: yellow;
+    grid-area: 3/3/4/4;
+}

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* tansform
+    !values:    
+    1. translateX(),translateY(),translate(takes 2 values: x-axis,y-axis)
+        !if given only one value it will consider it as X-axis and give y-axis default value of 0px */
+
+div.box1{
+    border: solid red;
+    background-color: purple;
+    height: 200px;
+    width: 200px;
+    transform: translateX(200px);
+    transform: translateY(200px);
+    transform: translate(700px, 200px);
+}
+ /* 2. scaleX(),scaleY(),scale(takes 2 values: x-axis,y-axis) 
+        !if given only one value it will consider it for both axis */
+.box2{
+    border: solid blue;
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    transform: scaleX(2);
+    transform: scaleY(1);
+    transform: scale(4,2);
+}
+/* 3. skewX(xdeg),skewY(ydeg),skew(takes 2 values: xdeg,ydeg)  x,y=any number from 0 to 360
+        !if given only one value it will consider it for both axis */
+.box3{
+    border: solid yellow;
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    transform: skewX(30deg);
+    transform: skewY(30deg);
+    transform: skew(30deg, 30deg);
+}
+/* 4.rotate(adeg) */
+.box4{
+    border: solid pink;
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    transform: rotate(45deg);
+}
+
+/* !to apply all together use
+transform: translate(x-axis,y-axis) scale(x-axis,y-axis) skew(xdeg,ydeg) rotate(adeg)   */
+#box{
+    border: solid black;
+    background-color: gray;
+    height: 200px;
+    width: 200px;
+    transform: translate(200px, 200px) scale(2, 2) skew(30deg,20deg) rotate(45deg);
+}

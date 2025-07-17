@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img[alt='fries']{
+    position: absolute;
+    top: 188px;
+    left: 6px;
+    z-index: 1;
+}
+img[alt='drink']{
+    position: absolute;
+    top: 135px;
+    right: 10px;
+}
+img[alt='burger']{
+    position:absolute;
+    top: 258px;
+    right: 89px;
+    z-index: 2;
+}
+#bg-tempt{
+    position: relative;
+    margin: 46px 428px;
+    width: 652px;
+    background-color: rgb(218, 128, 11);
+    height: 667px;
+}
+#price{
+    border-radius: 50%;
+    background-color: red;
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    bottom: 18px;
+    z-index: 3;
+}
+#bd{
+    z-index: 3;
+    border-radius: 50%;
+    border-style: dashed;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin: 10px 10px;
+    color: white;
+}
+#td{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    
+}
+#od{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#shadow{
+    position: absolute;
+    bottom: 46px;
+    width: 236px;
+    left: 229px;
+    box-shadow: 0px 26px 18px 6px black;
+    height: 11px;
+    border-radius: 50%;
+}
+#shadow1{
+    position: absolute;
+    bottom: 57px;
+    width: 145px;
+    left: 488px;
+    box-shadow: 1px 26px 20px 6px black;
+    height: 11px;
+    border-radius: 50%;
+}
