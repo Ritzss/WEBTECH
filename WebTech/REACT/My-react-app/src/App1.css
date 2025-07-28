@@ -1,0 +1,25 @@
+:root{
+    /* background-color: yellow; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.task{
+    border: solid 5px lightseagreen;
+    border-radius: 20px;
+    width: 97vw;
+    /* height: 44vw; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.productcard{
+    border: solid 5px lightseagreen;
+    border-radius: 20px;
+    height: 40vh;
+    margin: 10px;
+   
+}
